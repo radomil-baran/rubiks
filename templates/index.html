@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section>
+      <div class="file_input_form">
+          <form method= "POST" action = "" enctype="multipart/form-data" accept=".txt">
+                <input type="text" id="fname" name="scramble" style="width: 600px;"><br><br>
+              <div class="events">
+                  {% if value %}
+                  <div>Scramble: {{ scr }}</div>
+                  <div>Number of eos: {{ noeos }}</div>
+                  <div>Number of eos in 0: {{ no0 }}</div>
+                  <div>Number of eos in 1: {{ no1 }}</div>
+                  <div>Number of eos in 2: {{ no2 }}</div>
+                  <div>Number of eos in 3: {{ no3 }}</div>
+                  <div>Number of eos in 4: {{ no4 }}</div>
+                  <div>Number of eos in 5: {{ no5 }}</div>
+                  {% for i in value %}
+                  <div>{{ i }}</div>
+                {% endfor %}</div>
+              {% endif %}
+          </form>
+      </div>
+</section>
+
+
+</body>
+</html>
